@@ -54,6 +54,7 @@ const ShowMatchFixturesList = ({ allmatches }) => {
                             <td>AWAY TEAM</td>
                             <td>STATS</td>
                             <td>VENUE</td>
+                            <td>DATE_TIME</td>
                         </thead>
                         {allmatches.data.map((info, i) => (
                             <tbody>
@@ -88,6 +89,9 @@ const ShowMatchFixturesList = ({ allmatches }) => {
                                                 null
                                             }
                                         </td>
+                                    </td>
+                                    <td>
+                                            {info.match_start}
                                     </td>
                                 </tr>
                             </tbody>
